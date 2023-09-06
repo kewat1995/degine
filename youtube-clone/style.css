@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.main-contaner {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.cener-nav {
+    display: flex;
+    flex-direction: row;
+}
+.search {
+    display: flex;
+}
+
+.youtube-log img {
+    width: 150px;
+    height: auto;
+}
+.search input {
+    min-width: 600px;
+    padding: 10px 20px;
+    margin-left: 50px;
+
+    border: .5px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: 0;
+}
+input {
+    font-size: 20px;
+}
+button {
+    padding: 10px 20px;
+
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.mic {
+    padding: 15px;
+    margin-left: 15px;
+
+    border-radius: 50%;
+    background: rgb(240, 239, 239);
+}
+
+.mic img {
+    width: 30px;
+}
+.side-nav {
+    display: flex;
+    margin-left: 100px;
+
+    cursor: pointer;
+
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.container {
+    display: flex;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 30px;
+}
+.side-icon {
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+}
+.bars {
+    margin-top: 30px;
+}
+.side-icon img {
+    width: 30px;
+}
+.side-icon p {
+    margin-top: -2px;
+
+    font-size: 10px;
+}
+
+.tags {
+    display: flex;
+    padding: 10px 20px;
+
+    border-top: 1px solid gray;
+
+    gap: 15px;
+}
+.tag {
+    padding: 5px 15px;
+
+    border-radius: 1px solid gray;
+    border-radius: 20px;
+}
+.dark {
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: white;
+    background-color: #111;
+}
+.light {
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: black;
+    background: rgb(238, 238, 238);
+}
+
+main {
+    min-height: 100vh;
+
+    background: rgb(240, 238, 238);
+}
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card {
+    display: flex;
+    max-width: 320px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.avatar-content {
+    display: flex;
+    padding-top: 10px;
+
+    gap: 5px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.channel-name {
+    margin-top: 5px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+.content-status {
+    display: flex;
+    margin-top: 5px ;
+
+    font-size: 14px;
+
+    gap: 20px;
+}
+
+@media screen  and (max-width: 740px) {
+    .container,
+    .main-contaner {
+        width: 100%;
+    }
+    .search input {
+        width: 400px;
+    }
+    .side-icon {
+    }
+    .youtube-log {
+        width: 150px;
+    }
+    .bars {
+        width: 30px;
+    }
+    .center-nav {
+        display: none;
+    }
+    .card {
+        display: flex;
+        max-width: 600px;
+        flex-direction: column;
+    }
+    .side-nav {
+        width: 100%;
+        margin-left: auto;
+    }
+    .mic img {
+        width: 30px;
+    }
+    .mic {
+        margin-left: 5px;
+    }
+    .tags {
+        width: 100%;
+    }
+    .tag {
+        padding: 5px 10px;
+    }
+}

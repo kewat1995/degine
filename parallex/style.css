@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    line-height: 1.8em;
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:brown;
+}
+.pimg1{
+    background-image: url(images/7tgPhcw.jpg);
+    min-height: 100%;
+    }
+.pimg2{
+        background-image: url(images/R.jpeg);
+        min-height: 400px;
+        }
+.pimg3{
+     background-image: url(images/wp3326955.jpg);
+            min-height: 400px;
+    }
+    .pimg1,.pimg2,.pimg3{
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+
+    }
+    
+.ptext{
+   position:absolute ;
+   width: 100%;
+   top: 50%;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+    
+}
+.textbg{
+    font-size: 27px;
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section-light h1{
+    margin-bottom: 30px;
+}
+.section-light{
+    background-color: burlywood;
+    color: brown;
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+    html,body{
+        height:100% ;
+    }
+}
